@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.i_input{
+  color:royalblue;
+
+}
+
+::-webkit-file-upload-button {
+  background: royalblue;
+  color: white;
+  width:150px;
+  height:32px;
+  box-shadow: transparent;
+  border: transparent;
+
+}
+
+
+
+
+/* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 812px) {
+       /* Smaller Resolution Desktops and Laptops */
+
+   
+}
+
+@media only screen and (max-width: 812px) and (orientation: portrait) {
+  /* portrait phones */
+
+
+  .buttonss{
+    width:150px !important;
+   height:50px !important;
+   font-size: 14px !important;
+   overflow: hidden;
+   }
+
+
+   .hbuttonss{
+    width:250px !important;
+   height:30px !important;
+   font-size: 15px !important;
+   overflow: hidden;
+   }
+
+   .cbuttonss{
+    width:100px !important;
+   height:50px !important;
+   font-size: 15px !important;
+   overflow: hidden;
+   }
+
+   .titles{
+    font-size: 100px !important;
+  }
+
+  .ctitles{
+    font-size: 80px !important;
+  }
+
+  .mtitles{
+    font-size: 50px !important;
+  }
+
+  .invscampos{
+    width:375px !important;
+  }
+
+  .inputs{
+    width:40 !important
+  }
+
+
+
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
