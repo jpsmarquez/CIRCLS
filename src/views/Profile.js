@@ -127,7 +127,7 @@ const submitemail = () => {
         <br />
         <br />
       
-        <Card type="flex" style={{ width: 300,textAlign: 'center', alignItems:'center',borderColor:"royalblue",backgroundColor:'steelblue',color:"gold", borderWidth:5, }}>
+        <Card type="flex" style={{ width: 300,textAlign: 'center', alignItems:'center',borderColor:"royalblue",color:"gold", borderWidth:5, }}>
         <p>INGRESA TU CONTRASEÑA ACTUAL ANTES DE EFECTUAR ALGUN CAMBIO</p>
         <Input
         placeholder={"contraseña actual"}

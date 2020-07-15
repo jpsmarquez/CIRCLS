@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button, Form, Input, Row, Col, Divider, Card, message } from 'antd';
-
 import { Link, render } from "react-router-dom";
 import * as firebase from 'firebase';
 import { Aplicacion } from '../config/firebaseconfig';
@@ -8,8 +7,28 @@ import { storage } from '../config/firebaseconfig';
 
 
 export default function F(props) {
+  const [img, setI] = useState('');
+  const [urll, setUrl] = useState("");
 
+  var storageRef = storage.ref();
 
+  storageRef.child('images').listAll().then(function(result){
+
+    result.items.forEach((imgRef) => {
+        //console.log(imgRef.toString());
+       imgRef.getDownloadURL().then(function(url){
+        
+   
+
+       setUrl(url)
+   
+
+    })
+        
+    })
+}).catch(function(error){
+
+});
 
   // script.js
 

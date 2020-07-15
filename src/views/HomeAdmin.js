@@ -53,17 +53,13 @@ export default function HomeAdmin(props) {
                               <Link to="/Notas">
                                     <Button className="buttonss" type="primary" shape="round" style={{ width: 500, height: 80, backgroundColor: 'royalblue', fontSize: 45, }}  >
                                           NOTAS
-                        </Button>
+                                     </Button>
                               </Link>
                            
                               <br />
                               <br />
                               <br />
-                              <Link to="/Notas">
-                                    <Button className="buttonss" type="primary" shape="round" style={{ width: 500, height: 80, backgroundColor: 'royalblue', fontSize: 45, }}  >
-                                          INFO
-                        </Button>
-                              </Link>
+
 
 
 
@@ -111,14 +107,8 @@ export default function HomeAdmin(props) {
                         </Button>
 
                               </Link>
-                              <br />
-                              <br />
-                              <br />
-                              <Link to="/Fotos">
-                              <Button className="buttonss" size='100px' type="primary" shape="round" style={{ width: 500, height: 80, backgroundColor: 'royalblue', fontSize: 45 }}>
-                                    FOTOS
-                   </Button>
-                   </Link>
+                          
+
            
                               <br />
                               <br />

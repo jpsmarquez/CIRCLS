@@ -15,9 +15,7 @@ const Aplicacion =  {
   // Initialize Firebase
   firebase.initializeApp(Aplicacion);
   firebase.analytics();
-
-
-  const storage = firebase.storage();
+ const storage = firebase.storage();
   
 
 

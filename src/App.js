@@ -24,7 +24,7 @@ import Nota from './views/nota';
 import Fotos from './views/fotos';
 import Foto from './views/fotoy';
 import SubirFoto from './views/tf';
-
+import In from './views/info';
 
 
 export default function App() {
@@ -146,7 +146,11 @@ export default function App() {
 
           : <Login {...props} />)} />
 
+        <Route exact path="/Info" render={(props) => (logged ?
 
+          <In {...props} logout={logout} />
+
+          : <Login {...props} />)} />
         <Route exact path='/FPass' component={FPass} />
         <Route exact path='/Register' component={Register} />
 

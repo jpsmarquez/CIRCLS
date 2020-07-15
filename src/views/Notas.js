@@ -68,15 +68,14 @@ export default function NewNte(props) {
                 console.log(item.titulo)
                 console.log(item.info)
 
-
                 const arraydbaux = arrayofdb;
                 arraydbaux.splice({})
 
                 arraydbaux.push({
                     titulo: item.titulo,
                     info: item.info
-
                 })
+                
                 setArrayofdb(arraydbaux)
             }
         })

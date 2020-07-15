@@ -3,66 +3,48 @@ import { Button, Form, Input, Row, Col, Divider, Card, message } from 'antd';
 import { Link, render } from "react-router-dom";
 import * as firebase from 'firebase';
 import { Aplicacion } from '../config/firebaseconfig';
-import { storage } from  '../config/firebaseconfig';
+import { storage } from '../config/firebaseconfig';
 
 
 export default function NewF(props) {
-
-  const [img, setI] = useState('');
-  const [urll, setUrl] = useState("");
-  var storage = firebase.storage();
   var storageRef = storage.ref();
 
-  storageRef.child('images').listAll().then(function(result){
+  const addform = () => {
+    //  let f = [...formularios];  f.push(<Formasdecampo setC={setC} campos={campos} llenarcampos={llenarcampos} value={campos[index]} />);  setFormularios(f)
+  };
 
-    result.items.forEach((imgRef) => {
-        //console.log(imgRef.toString());
-       imgRef.getDownloadURL().then(function(url){
-        
-   
-
-       setUrl(url)
-   
-
-    })
-        
-    })
-}).catch(function(error){
-
-});
-
-
-
-
-
-
-// script.js
+  // script.js
 
 
 
   return (
-      
+
     <Row>
       <Col span={24}>
-      <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div style={{
           display: 'flex',
           justifyContent: 'space-around'
-         }}>
+        }}>
+          <Button type="primary" shape="round" onClick={addform} style={{ backgroundColor: 'royalblue' }}>
+            AGREGAR ALBUM
+          </Button>
 
 
 
 
+          <Link to="/Home">
+            <Button type="primary" shape="round" style={{ backgroundColor: 'royalblue' }} >
+              INICIO
+               </Button>
+          </Link>
 
-
-
-  
 
 
         </div>

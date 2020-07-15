@@ -200,7 +200,7 @@ export default withRouter( function Inversion(props) {
           <br/>
         </Col>
 
-        <img src={urll} />
+      
       </Row>
     </div>
   );
